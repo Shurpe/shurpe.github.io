@@ -1,0 +1,239 @@
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение элементов */
+    align-items: center; /* Центрирование элементов по горизонтали */
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение содержимого внутри элемента */
+    align-items: center; /* Центрирование содержимого */
+    background-color: #f9f9f9; /* Цвет фона для элементов */
+    padding: 10px; /* Отступы внутри элементов */
+    border: 1px solid #ccc; /* Граница для элементов */
+    border-radius: 5px; /* Скругление углов */
+    margin: 10px; /* Отступ между элементами */
+}
+
+.flex-history {
+    display: flex;
+    justify-content: space-between; /* Распределение элементов по горизонтали */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+}
+
+.flex-comics {
+    display: flex;
+    flex-wrap: wrap; /* Перенос элементов на новую строку при нехватке места */
+    justify-content: center; /* Центрирование изображений */
+}
+
+.flex-comics img {
+    margin: 10px; /* Отступ между изображениями */
+}
+
+/* Существующие стили и анимации остаются без изменений */
+ul {
+    list-style-type: none;
+}
+ul li::before {
+    content: "\958"; /* Характер для символа из таблицы Unicode */
+    margin-right: 5px;
+}
+
+/* Остальные ваши стили и анимации */
+body > p {
+    font-size: 1.1em; /* Размер шрифта для абзацев */
+    line-height: 1.5; /* Межстрочный интервал */
+}
+h2 + div {
+    border-top: 50px solid #d6b914; /* Верхняя граница для первого div после h2 */
+    margin-top: 20px; /* Отступ сверху */
+}
+body p {
+    color: #ee1bb9; /* Цвет текста для всех абзацев внутри body */
+    font-size: 1.1em; /* Размер шрифта для абзацев */
+}
+.quote {
+    background-color: #6dca17; /* Цвет фона для цитат */
+    padding: 10px; /* Отступы внутри блока цитаты */
+    border-left: 5px solid #3498db; /* Левая граница для выделения */
+}
+a[href$=".html"] {
+    color: #67f543; /* Цвет текста для ссылок, заканчивающихся на ".html" */
+    text-decoration: underline; /* Подчеркивание текста */
+}
+.bac {
+    background-image: url('../images/320.jpg');
+    background-repeat: no-repeat; /* Не повторять изображение */
+    background-attachment: fixed; /* Фон фиксирован относительно окна */
+    background-position: center; /* Центрировать изображение */
+    background-size: cover; /* Изображение будет покрывать весь фон */
+}
+.linear-gradient-example {
+    background: linear-gradient(to right, #3498db, #2ecc71); /* Переход слева направо */
+}
+body {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.icon {
+    font-size: 24px; /* Размер иконки */
+    color: #333; /* Цвет иконки */
+    margin: 10px; /* Отступы */
+    transition: color 0.3s; /* Плавный переход цвета */
+}
+.icon:hover {
+    color: #007bff; /* Цвет при наведении */
+}
+.icon::before {
+    content: "★ "; /* Добавляет звезду перед иконкой */
+    color: #ffcc00; /* Цвет звезды */
+}
+i {
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px rgba(143, 44, 126, 0.3);
+    text-decoration: underline;
+    text-align: justify;
+    text-indent: 20px;
+    vertical-align: middle;
+    line-height: 1.6;
+    color: #44e61c;
+}
+body p::first-line {
+    font-weight: bold; /* Жирный шрифт для первой строки абзаца */
+    color: #ff0000; /* Красный цвет для первой строки */
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}
+@media print {
+    .no-print {
+        display: none;
+    }
+    body {
+        font-size: 12pt;
+    }
+}
+.border-image-example {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 10px solid;
+    background-color: #ca1414;
+    border: 5px solid #1bce57; /* Простая рамка */ 
+    border-image: url('../images/321.jpg') 30 stretch; /* Используем изображение для рамки */
+    border-radius: 15px; /* Скругление углов */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Тень */
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse; /* Убирает двойные границы */
+}
+tr, td {
+    border: 1px solid #601dcc; /* Граница ячеек */
+    padding: 8px; /* Отступ внутри ячеек */
+    text-align: left; /* Выравнивание текста */
+}
+tr {
+    background-color: #e40000; /* Цвет фона заголовков */
+}
+.custom-list li {
+    background-image: url('../images/star.png'); /* Изображение в качестве маркера */
+    background-size: 20px 20px; /* Размер изображения */
+    background-repeat: no-repeat; /* Не повторять изображение */
+    background-position: 0 50%; /* Выравнивание изображения по вертикали */
+    padding-left: 30px; /* Отступ слева для текста, чтобы не перекрывать изображение */
+    margin-bottom: 10px; /* Отступ между элементами списка */
+}
+.custom-list li::marker {
+    color: #ffcc00; /* Цвет маркера списка */
+}
+.box {
+    width: 100px;
+    height: 80px;
+    background-color: blue;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+.box:hover {
+    background-color: red;
+    transform: scale(1.2);
+} 
+.box1 {
+    width: 70px;
+    height: 60px;
+    background-color: rgb(150, 206, 18);
+    transition: transform 0.5s ease;
+}
+.box1:hover {
+    transform: translate(50px, 50px) rotate(45deg);
+}
+@keyframes moveAndChangeColor {
+    0% { background-color: yellow; transform: translateX(0); }
+    50% { background-color: red; transform: translateX(300px); }
+    100% { background-color: yellow; transform: translateX(0); }
+}
+.animated-box {
+    width: 80px;
+    height: 50px;
+    animation: moveAndChangeColor 3s infinite;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .moving-element {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(187, 224, 22);
+    position: relative;
+    animation: move 5s linear infinite;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
+}
+.photo {
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+   }
+   .photo:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 40%; top: 40%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(238, 238, 16, 0.9); /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #df0707; /* Параметры рамки */
+   }
+   .scale {
+    transition: 1s; /* Время эффекта */
+   }
+   .scale:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+   }
